@@ -34,3 +34,14 @@ for (let i = 0; i < gastos.length; i++){
 //Atualiza total no HTML
 document.getElementById("total").textContent = total
 })
+
+// Gráfico de Pizza
+let grafico = new Chart(document.getElementById("grafico"), {
+    type: "pie",
+    data: {
+        labels: ["Alimentação", "Transporte", "Lazer"],
+        datasets:[{
+            data: [0, 0, 0]
+        }]
+    }
+})
