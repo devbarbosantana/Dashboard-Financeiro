@@ -6,7 +6,7 @@ document.getElementById("btn-adicionar").addEventListener("click", function(){
 
 //Pega os 3 valores colocados no Programa
 descricao = document.getElementById("descricao").value
-valor = document.getElementById("valor").value
+valor = Number(document.getElementById("valor").value)
 categoria = document.getElementById("categoria").value
 
 //Objeto para gastos
