@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Dashboard Financeiro</title>
+    </head>
+    <body>
+        <!--Título-->
+        <h1>Dashboard Financeiro</h1>
+
+        <!--Parágrafo-->
+        <p>Controle seus gastos por categoria</p>
+
+        <!--Valores Utilizados-->
+        <label>Descrição</label>
+        <input type="text" id="descricao">
+
+        <label>Valor</label>
+        <input type="number" id="valor">
+
+        <label>Categoria</label>
+        <select id="categoria">
+            <option>Alimentação</option>
+            <option>Transporte</option>
+            <option>Lazer</option>
+        </select>
+
+        <!--Botão-->
+        <button id="btn-adicionar">Adicionar gasto</button>
+
+        <!--Lista-->
+        <ul id="lista"></ul>
+
+        <!--Gastos Totais-->
+        <p>Total: R$ <span id="total">0</span></p>
+
+        //Ligando com o JavaScript
+        <script src="script.js"></script>
+
+    </body>
+</html>
